@@ -85,9 +85,9 @@ async function registerUser(event) {
             },
 
             body: JSON.stringify({
-                name,
-                email,
-                password
+            username: name,
+            email,
+            password
             })
 
         });
