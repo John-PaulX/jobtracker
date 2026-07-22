@@ -17,7 +17,20 @@ body{
 
     align-items:center;
 
-    background:#eef2f7;
+    overflow:hidden;
+
+    background:linear-gradient(
+        -45deg,
+        #eef2ff,
+        #dbeafe,
+        #ede9fe,
+        #e0f2fe,
+        #f5f3ff
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientBG 18s ease infinite;
 
 }
 
@@ -514,6 +527,40 @@ grid-column:auto;
 .search-container input{
 
 width:100%;
+
+}
+
+}
+
+@keyframes gradientBG{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+25%{
+
+background-position:50% 100%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+75%{
+
+background-position:50% 0%;
+
+}
+
+100%{
+
+background-position:0% 50%;
 
 }
 

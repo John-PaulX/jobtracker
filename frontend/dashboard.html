@@ -17,7 +17,15 @@
 
     <div class="header">
 
-        <h1>💼 Job Application Tracker</h1>
+        <div class="header-title">
+
+            <h1>💼 Job Application Tracker</h1>
+
+            <p class="dashboard-subtitle">
+                Track every application and stay organized.
+            </p>
+
+        </div>
 
         <div class="header-buttons">
 
@@ -33,7 +41,7 @@
 
     </div>
 
-    <!-- Add Job Form -->
+    <!-- Job Form -->
 
     <div id="jobFormContainer" style="display:none; margin-bottom:30px;">
 
@@ -63,11 +71,8 @@
             <select id="status">
 
                 <option value="Applied">Applied</option>
-
                 <option value="Interview">Interview</option>
-
                 <option value="Selected">Selected</option>
-
                 <option value="Rejected">Rejected</option>
 
             </select>
@@ -92,33 +97,33 @@
 
     </div>
 
-    <!-- Job Table -->
+    <!-- Table -->
 
-    <table>
+    <div class="table-container">
 
-        <thead>
+        <table>
 
-        <tr>
+            <thead>
 
-            <th>Company</th>
+            <tr>
 
-            <th>Role</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Actions</th>
 
-            <th>Location</th>
+            </tr>
 
-            <th>Status</th>
+            </thead>
 
-            <th>Actions</th>
+            <tbody id="jobTableBody">
 
-        </tr>
+            </tbody>
 
-        </thead>
+        </table>
 
-        <tbody id="jobTableBody">
-
-        </tbody>
-
-    </table>
+    </div>
 
     <!-- Pagination -->
 
