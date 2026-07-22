@@ -74,6 +74,7 @@ async function registerUser(event) {
     }
 
     try {
+        console.log("API_BASE_URL =", API_BASE_URL);
 
         const response = await fetch(`${API_BASE_URL}/auth/register`, {
 
