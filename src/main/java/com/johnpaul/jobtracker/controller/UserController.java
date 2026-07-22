@@ -38,10 +38,10 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody User user) {
 
-        User savedUser = userService.register(user);
-
-        System.out.println("username = " + user.getName());
+        System.out.println("name = " + user.getName());
         System.out.println("email = " + user.getEmail());
+
+        User savedUser = userService.register(user);
 
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
