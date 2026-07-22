@@ -97,8 +97,11 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOriginPatterns(
-                List.of("http://localhost:*",
-                        "http://127.0.0.1:*")
+                List.of(
+                        "http://localhost:*",
+                        "http://127.0.0.1:*",
+                        "https://jobtracker-azure.vercel.app"
+                )
         );
 
         configuration.setAllowedMethods(
