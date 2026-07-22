@@ -24,7 +24,7 @@ public class User {
     }
 
     public User(Long id,
-                String username,
+                String name,
                 String email,
                 String password,
                 String role) {
@@ -50,7 +50,7 @@ public class User {
         return name;
     }
 
-    public void setName(String username) {
+    public void setName(String name) {
         this.name = name;
     }
 
