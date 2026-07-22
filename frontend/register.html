@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Create Account</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -15,36 +25,44 @@
 
     <form id="registerForm">
 
-        <input
-                type="text"
-                id="name"
-                placeholder="Full Name"
-                required
-        >
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+        </div>
 
-        <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                required
-        >
+        <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+        </div>
 
-        <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                required
-        >
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required>
+        </div>
 
-        <input
-                type="password"
-                id="confirmPassword"
-                placeholder="Confirm Password"
-                required
-        >
+        <div class="input-box">
+            <i class="fa-solid fa-key"></i>
+            <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required>
+        </div>
 
         <button type="submit">
-            Register
+            Create Account
         </button>
 
     </form>
@@ -60,4 +78,5 @@
 <script src="js/auth.js"></script>
 
 </body>
+
 </html>
