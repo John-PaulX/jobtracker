@@ -1,0 +1,96 @@
+.dashboard{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.header-buttons button{
+    width:auto;
+    padding:10px 18px;
+    margin-left:10px;
+}
+
+.search-container{
+    margin-bottom:20px;
+}
+
+.search-container input{
+    width:300px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.applied{
+    background:#007bff;
+}
+
+.interview{
+    background:#f39c12;
+}
+
+.selected{
+    background:#27ae60;
+}
+
+.rejected{
+    background:#e74c3c;
+}
+
+.edit-btn{
+    background:#3498db;
+    margin-right:5px;
+}
+
+.delete-btn{
+    background:#e74c3c;
+}
+
+.pagination{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.pagination button{
+    width:120px;
+}

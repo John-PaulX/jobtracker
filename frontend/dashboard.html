@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>Job Application Tracker</h1>
+
+        <div class="header-buttons">
+            <button id="addJobBtn">Add Job</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </div>
+
+<div id="jobFormContainer" style="display:none; margin-bottom:20px;">
+
+    <form id="jobForm">
+
+        <input
+                type="text"
+                id="company"
+                placeholder="Company"
+                required
+        >
+
+        <input
+                type="text"
+                id="role"
+                placeholder="Role"
+                required
+        >
+
+        <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required
+        >
+
+        <select id="status">
+
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Selected">Selected</option>
+            <option value="Rejected">Rejected</option>
+
+        </select>
+
+        <button type="submit">
+            Save Job
+        </button>
+
+    </form>
+
+</div>
+
+    <div class="search-container">
+
+        <input
+                type="text"
+                id="search"
+                placeholder="Search by company..."
+        >
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="jobTableBody">
+
+        </tbody>
+
+    </table>
+
+    <div class="pagination">
+
+        <button id="previousBtn">Previous</button>
+
+        <span id="pageNumber">Page 1</span>
+
+        <button id="nextBtn">Next</button>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
