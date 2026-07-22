@@ -40,7 +40,7 @@ public class UserController {
 
         User savedUser = userService.register(user);
 
-        System.out.println("username = " + user.getUsername());
+        System.out.println("username = " + user.getName());
         System.out.println("email = " + user.getEmail());
 
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
