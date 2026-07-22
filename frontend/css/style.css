@@ -218,3 +218,303 @@ font-size:28px;
 }
 
 }
+
+/* ===========================
+   DASHBOARD STYLES
+=========================== */
+
+body.dashboard-page{
+    display:block;
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+/* Main Container */
+
+.dashboard{
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Header */
+
+.dashboard .header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.dashboard .header h1{
+
+    margin:0;
+
+    text-align:left;
+
+    font-size:32px;
+
+}
+
+/* Buttons */
+
+.dashboard button{
+
+    width:auto;
+
+    margin-top:0;
+
+    padding:12px 24px;
+
+}
+
+.header-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+/* Job Form */
+
+.dashboard #jobForm{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.dashboard #jobForm input,
+.dashboard #jobForm select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+.dashboard #jobForm button{
+
+    grid-column:span 2;
+
+    justify-self:start;
+
+}
+
+/* Search */
+
+.search-container{
+
+    margin:25px 0;
+
+}
+
+.search-container input{
+
+    width:320px;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+/* Table */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#4f46e5;
+
+    color:white;
+
+}
+
+th{
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+/* Status Badges */
+
+.status{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status.applied{
+
+    background:#3b82f6;
+
+}
+
+.status.interview{
+
+    background:#f59e0b;
+
+}
+
+.status.selected{
+
+    background:#22c55e;
+
+}
+
+.status.rejected{
+
+    background:#ef4444;
+
+}
+
+/* Edit/Delete Buttons */
+
+.edit-btn,
+.delete-btn{
+
+    width:auto !important;
+
+    padding:8px 14px;
+
+    margin-right:8px;
+
+}
+
+.edit-btn{
+
+    background:#2563eb;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+}
+
+/* Pagination */
+
+.pagination{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.pagination button{
+
+    width:120px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.dashboard{
+
+margin:20px;
+
+padding:20px;
+
+}
+
+.dashboard .header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.dashboard #jobForm{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard #jobForm button{
+
+grid-column:auto;
+
+}
+
+.search-container input{
+
+width:100%;
+
+}
+
+}

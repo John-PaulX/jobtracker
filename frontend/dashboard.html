@@ -4,88 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Job Application Tracker</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="dashboard-page">
 
 <div class="dashboard">
 
+    <!-- Header -->
+
     <div class="header">
 
-        <h1>Job Application Tracker</h1>
+        <h1>💼 Job Application Tracker</h1>
 
         <div class="header-buttons">
-            <button id="addJobBtn">Add Job</button>
-            <button id="logoutBtn">Logout</button>
+
+            <button id="addJobBtn">
+                Add Job
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
         </div>
 
     </div>
 
-<div id="jobFormContainer" style="display:none; margin-bottom:20px;">
+    <!-- Add Job Form -->
 
-    <form id="jobForm">
+    <div id="jobFormContainer" style="display:none; margin-bottom:30px;">
 
-        <input
-                type="text"
-                id="company"
-                placeholder="Company"
-                required
-        >
+        <form id="jobForm">
 
-        <input
-                type="text"
-                id="role"
-                placeholder="Role"
-                required
-        >
+            <input
+                    type="text"
+                    id="company"
+                    placeholder="Company"
+                    required
+            >
 
-        <input
-                type="text"
-                id="location"
-                placeholder="Location"
-                required
-        >
+            <input
+                    type="text"
+                    id="role"
+                    placeholder="Role"
+                    required
+            >
 
-        <select id="status">
+            <input
+                    type="text"
+                    id="location"
+                    placeholder="Location"
+                    required
+            >
 
-            <option value="Applied">Applied</option>
-            <option value="Interview">Interview</option>
-            <option value="Selected">Selected</option>
-            <option value="Rejected">Rejected</option>
+            <select id="status">
 
-        </select>
+                <option value="Applied">Applied</option>
 
-        <button type="submit">
-            Save Job
-        </button>
+                <option value="Interview">Interview</option>
 
-    </form>
+                <option value="Selected">Selected</option>
 
-</div>
+                <option value="Rejected">Rejected</option>
+
+            </select>
+
+            <button type="submit">
+                Save Job
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Search -->
 
     <div class="search-container">
 
         <input
                 type="text"
                 id="search"
-                placeholder="Search by company..."
+                placeholder="🔍 Search by company..."
         >
 
     </div>
+
+    <!-- Job Table -->
 
     <table>
 
         <thead>
 
         <tr>
+
             <th>Company</th>
+
             <th>Role</th>
+
             <th>Location</th>
+
             <th>Status</th>
+
             <th>Actions</th>
+
         </tr>
 
         </thead>
@@ -96,13 +120,21 @@
 
     </table>
 
+    <!-- Pagination -->
+
     <div class="pagination">
 
-        <button id="previousBtn">Previous</button>
+        <button id="previousBtn">
+            Previous
+        </button>
 
-        <span id="pageNumber">Page 1</span>
+        <span id="pageNumber">
+            Page 1
+        </span>
 
-        <button id="nextBtn">Next</button>
+        <button id="nextBtn">
+            Next
+        </button>
 
     </div>
 
@@ -112,4 +144,5 @@
 <script src="js/dashboard.js"></script>
 
 </body>
+
 </html>
